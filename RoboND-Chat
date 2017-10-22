@@ -38,3 +38,55 @@ so 0.4 of the time (40%) it predicted bowl for plastic cup
 ok ... now it is more clear for me
 thank you for the clarification.
 11:11 pm
+
+Problem hi
+
+Attempt question on Train your SVM in the picture : what does the bar represents for ? which is number 0.0 to 5.0
+11:26 pm
+Hi
+11:27 pm
+hi
+11:28 pm
+it's just a legend for the confusion matrix colours
+11:28 pm
+ok
+11:28 pm
+the maximum number inside the matrix is 5, min is 0
+so that is the scale
+and shows you which colors are set inside the matrix
+11:28 pm
+then .. in the quiz ...
+"Fraction of the Time" means?
+which matrix should i refer to
+11:29 pm
+fraction of time is same meaning as probability or %
+so right hand matrix
+11:29 pm
+ok wait a sec
+Image
+can u tell me are these correct ... because when i submit .. i am getting "try again"
+11:32 pm
+First one is incorrect - check the question again carefully :)
+11:33 pm
+then third one also should be wrong,?
+11:36 pm
+third one looks ok
+11:37 pm
+hmmm... then the value for the first one would be '0' ...plastick_cup(y) - hammer(y),right
+?
+11:40 pm
+no, first one is hammer(y), plastic cup (x)
+you got num 3 correct
+11:41 pm
+ok .. then it is '1'
+but it is throwing 'try again'
+1.0
+11:43 pm
+I think the problem is you set 1.0 for the number of times, and 1 for the fraction of time
+try swapping those 2
+its a little bit picky, but should work...
+11:44 pm
+ahh ... now it worked thanks....
+11:45 pm
+awesome!
+happy to help :)

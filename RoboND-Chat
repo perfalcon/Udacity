@@ -1,0 +1,40 @@
+# Udacity
+TOBER 21, 2017
+Problem hi
+
+Attempt can you provide more documentation on confusion matrix .. i didn't understand the image shown in the "Train your SVM"
+11:02 pm
+Hi
+11:04 pm
+hi
+11:04 pm
+the items on the y-axis show the actual object
+11:04 pm
+ok
+11:05 pm
+the items on the x-axis show what the model predicted that object was
+then the numbers in the grid show how many times that combination occured
+so the top-left hand corner of the image shows that 4 times when beer existed the classifier correctly predicted it to be beet
+*beer
+11:05 pm
+ok
+11:06 pm
+does it make sense?
+11:06 pm
+yes ,, if we take plastic_cup (Y) ,
+and bowl(x) .. the number indicates 2 ... means ... it predicted as bowl 2times for the plastic cup, right?
+11:07 pm
+exactly!
+11:09 pm
+thanks ...
+11:09 pm
+you're welcome :)
+11:09 pm
+what about the right image ... - Normalized means?
+11:09 pm
+the left image shows the absolute counts (i.e. it predicted bowl 2 times for plastic cup). The right side shows the same information, but as percentage instead
+so 0.4 of the time (40%) it predicted bowl for plastic cup
+11:11 pm
+ok ... now it is more clear for me
+thank you for the clarification.
+11:11 pm

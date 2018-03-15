@@ -1,0 +1,100 @@
+  libpulse-mainloop-glib0 libpulse0
+2 upgraded, 139 newly installed, 0 to remove and 645 not upgraded.
+Need to get 2,100 kB/26.7 MB of archives.
+After this operation, 159 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Err:1 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-astra-camera amd64 0.2.1-0xenial-20180212-074718-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:2 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-astra-launch amd64 0.2.1-0xenial-20180212-081529-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:3 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-costmap-2d amd64 1.14.2-0xenial-20180125-153757-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:4 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-base-local-planner amd64 1.14.2-0xenial-20180125-162312-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:5 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-capabilities amd64 0.2.0-0xenial-20171117-050356-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:6 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-create-description amd64 2.3.1-0xenial-20171117-020619-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:7 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-create-node amd64 2.3.1-0xenial-20180125-145326-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:8 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-dwa-local-planner amd64 1.14.2-0xenial-20180125-164047-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:9 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-build amd64 0.61.6-0xenial-20171104-173601-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:10 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-config amd64 0.61.6-0xenial-20171104-174013-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:11 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-type-traits amd64 0.61.17-0xenial-20171104-174546-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:12 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-errors amd64 0.61.6-0xenial-20171104-174530-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:13 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-converters amd64 0.61.17-0xenial-20171104-175714-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:14 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-utilities amd64 0.61.17-0xenial-20171104-175724-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:15 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-time-lite amd64 0.61.6-0xenial-20171104-175148-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:16 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-threads amd64 0.61.17-0xenial-20171104-175942-0800
+  400  Bad Request [IP: 64.50.236.52 80]
+Err:17 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-eigen amd64 0.61.17-0xenial-20171104-173904-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:18 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-sophus amd64 0.9.1-0xenial-20171104-173101-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:19 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-geometry amd64 0.61.17-0xenial-20171104-180406-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:20 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-ecl-sigslots amd64 0.61.17-0xenial-20171104-180158-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:21 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-libfreenect amd64 0.5.1-0xenial-20171104-173459-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:22 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-freenect-launch amd64 0.4.2-0xenial-20180125-144904-0800
+  404  Not Found [IP: 64.50.236.52 80]
+Err:23 http://packages.ros.org/ros/ubuntu xenial/main amd64 ros-kinetic-openslam-gmapping amd64 0.1.2-0xenial-20171104-174858-0800
+  404  Not Found [IP: 64.50.236.52 80]
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-astra-camera/ros-kinetic-astra-camera_0.2.1-0xenial-20180212-074718-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-astra-launch/ros-kinetic-astra-launch_0.2.1-0xenial-20180212-081529-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-costmap-2d/ros-kinetic-costmap-2d_1.14.2-0xenial-20180125-153757-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-base-local-planner/ros-kinetic-base-local-planner_1.14.2-0xenial-20180125-162312-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-capabilities/ros-kinetic-capabilities_0.2.0-0xenial-20171117-050356-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-create-description/ros-kinetic-create-description_2.3.1-0xenial-20171117-020619-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-create-node/ros-kinetic-create-node_2.3.1-0xenial-20180125-145326-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-dwa-local-planner/ros-kinetic-dwa-local-planner_1.14.2-0xenial-20180125-164047-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-build/ros-kinetic-ecl-build_0.61.6-0xenial-20171104-173601-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-config/ros-kinetic-ecl-config_0.61.6-0xenial-20171104-174013-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-type-traits/ros-kinetic-ecl-type-traits_0.61.17-0xenial-20171104-174546-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-errors/ros-kinetic-ecl-errors_0.61.6-0xenial-20171104-174530-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-converters/ros-kinetic-ecl-converters_0.61.17-0xenial-20171104-175714-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-utilities/ros-kinetic-ecl-utilities_0.61.17-0xenial-20171104-175724-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-time-lite/ros-kinetic-ecl-time-lite_0.61.6-0xenial-20171104-175148-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-threads/ros-kinetic-ecl-threads_0.61.17-0xenial-20171104-175942-0800_amd64.deb  400  Bad Request [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-eigen/ros-kinetic-ecl-eigen_0.61.17-0xenial-20171104-173904-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-sophus/ros-kinetic-sophus_0.9.1-0xenial-20171104-173101-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-geometry/ros-kinetic-ecl-geometry_0.61.17-0xenial-20171104-180406-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-ecl-sigslots/ros-kinetic-ecl-sigslots_0.61.17-0xenial-20171104-180158-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-libfreenect/ros-kinetic-libfreenect_0.5.1-0xenial-20171104-173459-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-freenect-launch/ros-kinetic-freenect-launch_0.4.2-0xenial-20180125-144904-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Failed to fetch http://packages.ros.org/ros/ubuntu/pool/main/r/ros-kinetic-openslam-gmapping/ros-kinetic-openslam-gmapping_0.1.2-0xenial-20171104-174858-0800_amd64.deb  404  Not Found [IP: 64.50.236.52 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+ERROR: the following rosdeps failed to install
+  apt: command [sudo -H apt-get install ros-kinetic-turtlebot-navigation] failed

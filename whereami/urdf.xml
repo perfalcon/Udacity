@@ -98,7 +98,7 @@
         <visual name="visual">
 	<origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>	 
           <geometry>
-           <cylinder length="0.05" radius="0.1"/>
+            <cylinder length="0.05" radius="0.1"/>
           </geometry>
         </visual>
 	<inertial>
@@ -112,10 +112,11 @@
     <origin xyz="0 0.15 0" rpy="0 0 0"/>
     <child link="left_wheel"/>
     <parent link="chassis"/>
-    <axis xyz="0 1 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0" />
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
+
 
 <link name="right_wheel">
     <collision name="collision">
@@ -125,9 +126,9 @@
           </geometry>
         </collision>
         <visual name="visual">
-		 <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
+	<origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>	 
           <geometry>
-            <cylinder length="0.05" radius="0.01"/>
+            <cylinder length="0.05" radius="0.1"/>
           </geometry>
         </visual>
 	<inertial>
@@ -141,9 +142,11 @@
     <origin xyz="0 -0.15 0" rpy="0 0 0"/>
     <child link="right_wheel"/>
     <parent link="chassis"/>
-    <axis xyz="0 1 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0" />
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
-  
+
+
+
 </robot>

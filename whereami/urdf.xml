@@ -1,6 +1,15 @@
 <?xml version='1.0'?>
 
 <robot name="udacity_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
 
   <link name="robot_footprint"></link>
 
@@ -35,6 +44,7 @@
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
+<material name="blue"/>
     </visual>
 
 
@@ -150,6 +160,7 @@
 
 
 <link name ="camera">
+ <pose>0 0 .1 0 0 0</pose>
 <collision name ="collision">
 <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
@@ -157,6 +168,7 @@
       </geometry>
 </collision>
 <visual name ="visual">
+ <pose>0 0 .1 0 0 0</pose>
 <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
         <box size=".05"/>
@@ -173,7 +185,6 @@
  <child link="camera"/>
  <parent link="chassis"/>
  </joint>
-
 <link name="hokuyo">
 <collision name="collision">
 <origin xyz="0 0 0" rpy=" 0 0 0"/>
@@ -183,7 +194,7 @@
 </collision>
 <visual name="visual">
 	<geometry>
-		 <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/> 
+	 <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/>
 	 </geometry>
 </visual>
 <inertial>
@@ -197,6 +208,5 @@
  <child link="hokuyo"/>
  <parent link="camera"/>
  </joint>
-
 	
 </robot>

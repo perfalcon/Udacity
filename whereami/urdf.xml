@@ -88,6 +88,7 @@
 
   </link>
 
+
 <link name="left_wheel">
     <collision name="collision">
 	 	<origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
@@ -148,5 +149,54 @@
   </joint>
 
 
+<link name ="camera">
+<collision name ="collision">
+<origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <box size=".05"/>
+      </geometry>
+</collision>
+<visual name ="visual">
+<origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <box size=".05"/>
+      </geometry>
+</visual>
+<inertial>
+    <origin xyz="0 0 0" rpy=" 0 0 0"/>
+     <mass value=".1"/>
+     <inertia ixx=".1"  ixy="0"  ixz="0" iyy=".1" iyz="0" izz=".1" />
+ </inertial>
+ </link>
+ <joint type="fixed" name="camera_joint">
+ <origin xyz="0.2 0 0" rpy="0 0 0"/>
+ <child link="camera"/>
+ <parent link="chassis"/>
+ </joint>
 
+<link name="hokuyo">
+<collision name="collision">
+<origin xyz="0 0 0" rpy=" 0 0 0"/>
+	<geometry>
+        <box size=".01"/>
+      </geometry>
+</collision>
+<visual name="visual">
+	<geometry>
+		 <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/> 
+	 </geometry>
+</visual>
+<inertial>
+    <origin xyz="0 0 0" rpy=" 0 0 0"/>
+     <mass value=".1"/>
+     <inertia ixx=".1"  ixy="0"  ixz="0" iyy=".1" iyz="0" izz=".1" />
+ </inertial>
+ </link>
+  <joint type="fixed" name="hokuyo_joint">
+ <origin xyz="0.15 0 0.1" rpy="0 0 0"/>
+ <child link="hokuyo"/>
+ <parent link="camera"/>
+ </joint>
+
+	
 </robot>

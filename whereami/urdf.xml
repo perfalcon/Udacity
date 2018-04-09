@@ -1,9 +1,14 @@
 <?xml version='1.0'?>
 
 <robot name="udacity_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-
 <xacro:include filename="$(find udacity_bot)/urdf/udacity_bot.gazebo" />
+<material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
 
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
 
   <link name="robot_footprint"></link>
 
@@ -38,9 +43,7 @@
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
-<material name="Blue">
-       <color rgba="0 0 1 1.0"/>
-     </material>
+     <material name="blue"/>
     </visual>
 
 
@@ -107,8 +110,8 @@
           <geometry>
             <cylinder length="0.05" radius="0.1"/>
           </geometry>
-<material name="Green">
-       <color rgba="0 1 0 1.0"/>
+      <material name="Green">
+       <color rgba="0 0.8 0 1.0"/>
      </material>
         </visual>
 	<inertial>
@@ -140,7 +143,7 @@
           <geometry>
             <cylinder length="0.05" radius="0.1"/>
           </geometry>
-<material name="Green">
+     <material name="Green">
        <color rgba="0 1 0 1.0"/>
      </material>
         </visual>
@@ -159,56 +162,44 @@
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
-
-
-<link name ="camera">
- <pose>0 0 .1 0 0 0</pose>
-<collision name ="collision">
-<origin xyz="0 0 0" rpy=" 0 0 0"/>
-      <geometry>
-        <box size=".05"/>
-      </geometry>
-</collision>
-<visual name ="visual">
- <pose>0 0 .1 0 0 0</pose>
-<origin xyz="0 0 0" rpy=" 0 0 0"/>
-      <geometry>
-        <box size=".05"/>
-      </geometry>
-</visual>
-<inertial>
-    <origin xyz="0 0 0" rpy=" 0 0 0"/>
-     <mass value=".1"/>
-     <inertia ixx=".1"  ixy="0"  ixz="0" iyy=".1" iyz="0" izz=".1" />
- </inertial>
- </link>
- <joint type="fixed" name="camera_joint">
- <origin xyz="0.2 0 0" rpy="0 0 0"/>
- <child link="camera"/>
- <parent link="chassis"/>
- </joint>
-<link name="hokuyo">
-<collision name="collision">
-<origin xyz="0 0 0" rpy=" 0 0 0"/>
-	<geometry>
-        <box size=".01"/>
-      </geometry>
-</collision>
-<visual name="visual">
-	<geometry>
-	 <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/>
-	 </geometry>
-</visual>
-<inertial>
-    <origin xyz="0 0 0" rpy=" 0 0 0"/>
-     <mass value=".1"/>
-     <inertia ixx=".1"  ixy="0"  ixz="0" iyy=".1" iyz="0" izz=".1" />
- </inertial>
- </link>
-  <joint type="fixed" name="hokuyo_joint">
- <origin xyz="0.15 0 0.1" rpy="0 0 0"/>
- <child link="hokuyo"/>
- <parent link="camera"/>
- </joint>
 	
+<link name ="camera">
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<visual>
+<origin xyz="1 1 4" rpy="0 0 0"/>
+<geometry>
+<box size="0.05 .1 .1"/>
+</geometry>
+<material name="blue"/>
+</visual>
+<inertial>
+     <mass value=".1"/>
+     <inertia ixx="1e-6"  ixy="0"  ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+ </inertial>
+</link>
+<joint type="fixed" name="camera_joint">
+<orign xyz="0.2 0 0" rpy="0 0 0"/>
+<child link="camera"/>
+<parent link="chassis"/>
+</joint>
+
+<link name="hokuyo">
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<visual>
+<geometry>
+ <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/>
+</geometry>
+</visual>
+<inertial>
+     <mass value=".1"/>
+     <inertia ixx="1e-6"  ixy="0"  ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+ </inertial>
+</link>
+
+<joint type="fixed" name="hokuyo_joint">
+<origin xyz="0.15 0 0.1" rpy="0 0 0"/>
+<child link="hokuyo"/>
+<parent link="chassis"/>
+</joint>
+
 </robot>

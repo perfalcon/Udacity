@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Popular Movie Stage II</string>
+    <!-- Error messages-->
+    <string name="detail_error_message">Movie data not available</string>
+    <string name="internet_error_message">Please check your Internet Connection</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- Detail Activity-->
+    <string name="Movie_Title_label">Movie Title:</string>
+    <string name="Plot_Synopsis_label">Plot Synopsis:</string>
+    <string name="User_Rating_label">User Rating:</string>
+    <string name="Release_Date_label">Release Date:</string>
+</resources>

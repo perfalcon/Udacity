@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1049375092102",
+    "firebase_url": "https://squawker-352bf.firebaseio.com",
+    "project_id": "squawker-352bf",
+    "storage_bucket": "squawker-352bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049375092102:android:3345804a39540d3f",
+        "android_client_info": {
+          "package_name": "android.example.com.squawker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049375092102-n5ikumfr4u0g95fh1a0i7c555edibro0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA-yDtqWRha4hCQHFIukEbxeNHzPXkEnE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

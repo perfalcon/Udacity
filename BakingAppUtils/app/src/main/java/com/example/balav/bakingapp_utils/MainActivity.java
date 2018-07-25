@@ -5,6 +5,8 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -20,6 +22,7 @@ import com.example.balav.bakingapp_utils.model.Baking;
 import com.example.balav.bakingapp_utils.utils.GsonUtils;
 import com.example.balav.bakingapp_utils.utils.NetworkUtils;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         for (Baking baking : mBaking) {
             Log.v(TAG,"Baking -->"+baking.toString ());
         }
+        loadRecipesView();
     }
 
 
@@ -82,5 +86,12 @@ public class MainActivity extends AppCompatActivity {
         public void onErrorResponse(VolleyError error){
             Log.i(TAG,"Error :" + error.toString());
         }
+    }
+    private void loadRecipesView(){
+        RecyclerView rvTrailer = (RecyclerView) findViewById(R.id.rv_recipe);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        rvTrailer.setLayoutManager (layoutManager);
+        RecipeAdapter adapterRecipe =  new RecipeAdapter (mBaking);
+        rvTrailer.setAdapter (adapterRecipe);
     }
 }

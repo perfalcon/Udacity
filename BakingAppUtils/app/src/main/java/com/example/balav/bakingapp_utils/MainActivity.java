@@ -1,15 +1,21 @@
 package com.example.balav.bakingapp_utils;
 
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.balav.bakingapp_utils.model.Baking;
 import com.example.balav.bakingapp_utils.utils.GsonUtils;
 import com.example.balav.bakingapp_utils.utils.NetworkUtils;
@@ -25,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private RequestQueue mRequestQueue;
     private StringRequest mStringRequest;
 
-    private String url = "https://d17h27t6h515a5.cloudfront.net/topher/2017/May/59121517_baking/baking.json";
+    private String BAKING_DATA_URL = "https://d17h27t6h515a5.cloudfront.net/topher/2017/May/59121517_baking/baking.json";
 
     private  NetworkUtils mNetworkUtils;
 
@@ -39,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btnRequest.setOnClickListener(new View.OnClickListener() {
                                           @Override
                                           public void onClick(View v){
-                                              new FetchBakingDetails ().execute(url);
+                                              sendAndRequestResponse();
                                           }
                                       }
 
@@ -53,26 +59,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public class FetchBakingDetails extends AsyncTask<String,Void, String>{
+    public void sendAndRequestResponse() {
+        //RequestQueue initialized
+        mRequestQueue = Volley.newRequestQueue(this);
+        //String Request initialized
+        mStringRequest = new StringRequest (Request.Method.GET, BAKING_DATA_URL, new ResponseListener (), new ErrorListener ());
+        mRequestQueue.add(mStringRequest);
 
-        String baking_response=null;
+    }
 
+    private class ResponseListener implements Response.Listener{
         @Override
-        protected String doInBackground(String... params) {
-            baking_response = mNetworkUtils.sendAndRequestResponse(MainActivity.this);
-            return baking_response!=null?baking_response:"";
-        }
-        @Override
-        protected void onPostExecute(String bakingResults){
-            Log.v(TAG,"[onPostExecute]-->"+bakingResults);
-           mBaking= new GsonUtils ().populateBaking (bakingResults);
+        public void onResponse(Object response) {
+            Toast.makeText(getApplicationContext (),"Response :" + response.toString(), Toast.LENGTH_LONG).show();//display the response on screen
+             mBaking= new GsonUtils ().populateBaking (response.toString ());
             displayBakingDetails();
-
         }
     }
 
-
-
-
-
+    private class ErrorListener implements Response.ErrorListener{
+        @Override
+        public void onErrorResponse(VolleyError error){
+            Log.i(TAG,"Error :" + error.toString());
+        }
+    }
 }
